@@ -64,6 +64,13 @@ window.ALBUM = {
       porque: "Ele não fala: o canto é o jargão. É o aviso de que ali tem ninho, e é o som que dá nome à ave. Quem ouve já sabe que precisa dar a volta.",
       quando: "Quando um sapato chega perto demais do capim." },
     quadra: "É um quero-quero. Protege o ninho no campinho: quem corre atrás da bola tem de dar a volta.",
+    /* Por que este bicho é o mascote. Fatos da ave conferidos em 25/11/2026 (ninho no chão, defesa do ninho, jogo de 2024 em Itajaí). */
+    motivo: { titulo: "Por que um quero-quero", sub: "Todo time tem mascote. O da Tropinha já morava no gramado.",
+      itens: [
+        ["É o bicho do futebol brasileiro", "O quero-quero faz o ninho no chão, em gramado aberto, e dá rasante em quem chega perto dos ovos. Por isso aparece em tanto campo pelo país. Em 2024, um filhote parou um jogo da Copa do Brasil em Itajaí, até um jogador tirá-lo do gramado."],
+        ["É o único que dribla o Vovô", "O Vovô vive de fazer o marcador mudar de caminho. Com o Topete é o contrário: um passo curto da ave, e quem abre a curva é ele. É a ideia da série vista de baixo: quem lê o corpo do outro ganha o lance."],
+        ["O nome vem do desenho", "Topete é a crista escura virada para trás. Com o peito erguido, ela faz a silhueta dele ser reconhecida até em tamanho pequeno, numa estampa ou num boneco."]
+      ] },
     lance: { nome: "O aviso", texto: "No ninho, ele ergue a cabeça. Um passo curto, o peito estufado, as asas abertas. Quem vinha correndo dá a volta, e ele volta a sentar.", quadros: [28, 13, 16, 17, 22, 28] }
   }
 };

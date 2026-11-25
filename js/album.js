@@ -84,6 +84,8 @@ function pagina(p, i) {
         <p class="quadra"><b>Na quadra</b>${esc(a.quadra)}</p>
       </div>
     </div>
+    ${a.motivo ? `<div class="motivo"><p class="sobre">${esc(a.papel)}</p><h3 class="motivo-t">${esc(a.motivo.titulo).replace(/(\S+-\S+)/g, '<span class="junto">$1</span>')}</h3><p class="sub">${esc(a.motivo.sub)}</p>
+      <ol class="passos-como">${a.motivo.itens.map((x, k) => `<li><b>${k + 1}</b><div><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></div></li>`).join("")}</ol></div>` : ""}
     <div class="fatos">${fato("O que quer", p.desejo)}${fato("Qualidade", p.qualidade)}${fato("Defeito", p.defeito)}${fato("O que esperar", p.esperar)}</div>
     <aside class="jargao" id="j-${p.id}">
       <div class="jargao-cab"><p class="sobre">O jargão ${de(p.id)}</p><p class="jargao-frase">“${esc(a.jargao.frase).replace(/\*(.+?)\*/g, "<i>$1</i>")}”</p></div>
