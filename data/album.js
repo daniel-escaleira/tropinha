@@ -1,4 +1,4 @@
-/* O que aparece primeiro em cada página: o papel, a fala, o que faz na quadra, o jargão (caixa colorida) e o lance (replay em quadros).
+/* O que aparece primeiro em cada página: o papel, a fala (com falaNota: quando é dita e o que mostra), o que faz na quadra, o jargão (caixa colorida) e o lance (replay em quadros).
    No jargão, o trecho entre asteriscos sai em itálico: pega *la vision*.
    O texto completo de cada ficha continua em data/personagens.js.
    Para pôr o vídeo de um personagem no site, acrescente uma linha em VIDEOS com o id dele em "de". */
@@ -6,6 +6,7 @@ window.ALBUM = {
   vovo: {
     papel: "O protagonista",
     fala: "Ué. Eu marquei o quê, então?",
+    falaNota: "Ele diz isso depois de levar uma caneta: procura a bola onde ela devia estar e só acha o chão. Mostra o humor do Vovô, que ri do próprio erro antes de qualquer um.",
     jargao: { frase: "pega *la vision*",
       porque: "É como ele chama o replay. Quando o lance tem um detalhe que enganou o marcador, ele para tudo e manda olhar de novo. Fala em espanhol: “vision”, nunca “visão”.",
       quando: "Só ele diz, e no máximo uma vez por história. Se a jogada foi de outra pessoa, ele chama o replay e quem fez explica." },
@@ -15,6 +16,7 @@ window.ALBUM = {
   nanda: {
     papel: "A desafiante",
     fala: "Eu ia dizer esquerda. Ainda bem que eu calei.",
+    falaNota: "Ela ia cantar para que lado o Vovô sairia, segurou o palpite, e ele saiu pelo outro. O defeito da Nanda é anunciar a leitura cedo demais; aqui ela começa a aprender a esperar.",
     jargao: { frase: "Então vem.",
       porque: "É a resposta dela para quem fala do alambrado “essa eu fazia”. Em duas palavras, a conversa vira X1. Soa como convite e é desafio.",
       quando: "Antes do duelo, com a mão aberta pedindo a bola." },
@@ -24,6 +26,7 @@ window.ALBUM = {
   joia: {
     papel: "O filho que se espelha no pai",
     fala: "Um dia eu faço igual. Depois eu faço melhor.",
+    falaNota: "Ele diz olhando para o pai, depois de ver um lance dele. Primeiro quer copiar, depois superar: é a ambição do filho que admira o pai e quer ser um grande jogador.",
     jargao: { frase: "Um, dois… fui!",
       porque: "O pai segura a bola e espera em silêncio. O Joia ainda não tem essa paciência, então conta a pausa em voz baixa para não sair antes da hora. Quando pula o “dois”, perde a bola. No dia em que não precisar mais contar, virou craque.",
       quando: "Com a bola sob a sola, igual ao pai, antes de sair para o giro. É uma contagem que a tropa pode fazer junto." },
@@ -33,6 +36,7 @@ window.ALBUM = {
   duda: {
     papel: "A inventora de lance",
     fala: "Olha meu pé aqui. Agora olha de novo.",
+    falaNota: "É a Duda ensinando a Volta Curta: mostra onde o pé estava e para onde foi. Quem inventou o drible é quem explica, devagar, para o outro enxergar.",
     jargao: { frase: "Fui eu que dei o nome.",
       porque: "Na Tropinha, quem inventa a jogada escolhe o nome. O medo dela é que contem a história como se só tivesse repetido o lance de um adulto. O jargão é a assinatura de autora.",
       quando: "Depois da Volta Curta, quando alguém pergunta que drible foi aquele." },
@@ -42,6 +46,7 @@ window.ALBUM = {
   prancheta: {
     papel: "O observador",
     fala: "Deixa essa seta aberta. Agora é a minha vez.",
+    falaNota: "Ele larga o desenho pela metade para entrar no jogo. É a virada do Prancheta: o menino que só observava decide marcar o próximo lance.",
     jargao: { frase: "Qual pé ficou?",
       porque: "É a pergunta que explica qualquer drible: o pé que fica no chão mostra para onde o corpo vai. Ele repara no que a arquibancada perde, e a pergunta põe todo mundo olhando para o lugar certo.",
       quando: "Com o lápis parado no meio da seta, logo depois de um “espera”." },
@@ -51,6 +56,7 @@ window.ALBUM = {
   val: {
     papel: "A goleira",
     fala: "Foi o sol. Tá, foi seu pé. Outra?",
+    falaNota: "Ela diz depois de levar um gol: ensaia uma desculpa, admite que o mérito foi de quem chutou e já pede outra bola. É a Val justa e competitiva na mesma frase.",
     jargao: { frase: "Vai querer esse canto?",
       porque: "Ela deixa um canto do gol à vista de propósito, para ver se o chute vem. A pergunta é armadilha e convite ao mesmo tempo, e vale igual para qualquer jogador.",
       quando: "Antes do chute, oferecendo o canto. Depois da defesa, com a bola já segura, vira ironia." },
@@ -60,6 +66,7 @@ window.ALBUM = {
   topete: {
     papel: "O mascote",
     fala: "Um passo à frente. Um canto curto. O campinho inteiro entende.",
+    falaNota: "Ele não fala, então a frase descreve o jeito dele de dizer as coisas: o passo é o aviso, o canto é o ponto final. Ninguém precisa de tradução.",
     jargao: { frase: "Quero-quero!",
       porque: "Ele não fala: o canto é o jargão. É o aviso de que ali tem ninho, e é o som que dá nome à ave. Quem ouve já sabe que precisa dar a volta.",
       quando: "Quando um sapato chega perto demais do capim." },

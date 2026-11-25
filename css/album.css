@@ -107,6 +107,8 @@ p { margin: 0; }
 .pg h2 { font-size: clamp(60px, 13vw, 112px); }
 .epiteto { font: 600 24px/1.2 var(--texto); margin-top: 8px; }
 .fala { margin: 22px 0; padding: 4px 0 4px 18px; border-left: 8px solid var(--cor); font: 600 italic clamp(26px, 4.4vw, 36px)/1.15 var(--display); letter-spacing: .01em; }
+/* A continuação da fala: quando o personagem diz aquilo e o que a frase mostra dele. */
+.fala-nota { display: block; margin-top: 10px; max-width: 54ch; font: 400 17px/1.5 var(--texto); letter-spacing: 0; }
 .pg:nth-child(odd) .fala, .pg:nth-child(even) .fala { border-left-color: color-mix(in srgb, var(--cor) 70%, var(--tinta)); }
 .quadra { font-size: 19px; max-width: 54ch; }
 .quadra b { display: block; font: 700 13px/1.2 var(--texto); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 4px; }

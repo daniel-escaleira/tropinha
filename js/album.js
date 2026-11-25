@@ -80,7 +80,7 @@ function pagina(p, i) {
         <p class="papel"><b>${esc(a.papel)}</b><span>${esc(p.origem)}</span></p>
         <h2>${esc(p.nome)}</h2>
         <p class="epiteto">${esc(p.epiteto)}</p>
-        <blockquote class="fala">“${esc(a.fala)}”</blockquote>
+        <blockquote class="fala">“${esc(a.fala)}”${a.falaNota ? `<span class="fala-nota">${esc(a.falaNota)}</span>` : ""}</blockquote>
         <p class="quadra"><b>Na quadra</b>${esc(a.quadra)}</p>
       </div>
     </div>
