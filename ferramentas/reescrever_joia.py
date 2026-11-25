@@ -4,6 +4,8 @@ e quer ser um grande jogador. Sai o "narrador da quadra".
 Não mexe nos originais: lê origem/<nome>.pdf e grava origem/<nome>_v02.pdf.
 O texto antigo é removido do PDF (sem pintar por cima) e o novo entra com a mesma fonte, corpo, cor e entrelinha.
 Rodar:  uv run --no-project --with pymupdf --with fonttools python ferramentas/reescrever_joia.py
+        (para refazer só alguns livros, passe parte do nome: ... reescrever_joia.py Nanda Val)
+Os books da Nanda e da Val usam Open Sans; os demais, Barlow. As fontes ficam em ferramentas/fontes/.
 """
 import pathlib, sys
 import pymupdf
@@ -11,7 +13,8 @@ import pymupdf
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 ORIG, FONTES = RAIZ / "origem", RAIZ / "ferramentas" / "fontes"
 ARQ = {"Barlow-Regular": "Barlow-Regular.ttf", "Barlow-SemiBold": "Barlow-SemiBold.ttf", "Barlow-Italic": "Barlow-Italic.ttf",
-       "BarlowCondensed-ExtraBol": "BarlowCondensed-ExtraBold.ttf", "BarlowCondensed-ExtraBold": "BarlowCondensed-ExtraBold.ttf"}
+       "BarlowCondensed-ExtraBol": "BarlowCondensed-ExtraBold.ttf", "BarlowCondensed-ExtraBold": "BarlowCondensed-ExtraBold.ttf",
+       "OpenSans": "OpenSans-Regular.ttf"}
 FONTE = {k: pymupdf.Font(fontfile=str(FONTES / v)) for k, v in ARQ.items()}
 
 JOIA = [
@@ -57,7 +60,14 @@ ELENCO = [
 VOVO = [
     (5, "Fazer o marcador pisar", "Fazer o marcador pisar para o lado errado. Consegue esperar com a sola parada mesmo quando Joia já começou a comemorar o gol. Às vezes espera um toque a mais e perde a bola."),
 ]
-LIVROS = [("Book_individual_Joia", JOIA), ("O_Vovo_do_X1_e_sua_Tropinha_Book_do_Elenco_VFINAL", ELENCO), ("Book_individual_Vovo_do_X1", VOVO)]
+NANDA = [
+    (4, "O filho anuncia a mãe", "O filho tenta nela a pausa que aprendeu com o pai, e ela lê na hora. Na segunda, ele arrisca o próprio giro. Ela sorri antes de dar o bote."),
+]
+VAL = [
+    (4, "Ele troca o grito de gol", "Ele já comemorava o gol quando ela fechou o canto. Joia baixa os braços e aplaude. Val dá uma reverência curta com as luvas e já se vira para a reposição."),
+]
+LIVROS = [("Book_individual_Joia", JOIA), ("O_Vovo_do_X1_e_sua_Tropinha_Book_do_Elenco_VFINAL", ELENCO), ("Book_individual_Vovo_do_X1", VOVO),
+          ("Book_individual_Nanda", NANDA), ("Book_individual_Val", VAL)]
 
 
 def linhas(pg):
@@ -106,7 +116,9 @@ def trocar(pg, ancora, novo):
 
 
 def main():
+    so = sys.argv[1:]                                # opcional: só os livros cujo nome contém um destes termos
     for nome, lista in LIVROS:
+        if so and not any(t.lower() in nome.lower() for t in so): continue
         doc = pymupdf.open(ORIG / f"{nome}.pdf")
         for num in sorted({p for p, _, _ in lista}):
             pg = doc[num - 1]

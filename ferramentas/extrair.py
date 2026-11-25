@@ -17,11 +17,11 @@ ORIG, ASSETS, DATA = RAIZ / "origem", RAIZ / "assets", RAIZ / "data"
 LIVROS = [
     ("elenco", "O_Vovo_do_X1_e_sua_Tropinha_Book_do_Elenco_v02", "O elenco"),
     ("vovo", "Book_individual_Vovo_do_X1_v02", "Vovô do X1"),
-    ("nanda", "Book_individual_Nanda", "Nanda"),
+    ("nanda", "Book_individual_Nanda_v02", "Nanda"),
     ("joia", "Book_individual_Joia_v02", "Joia"),
     ("duda", "Book_individual_Duda", "Duda"),
     ("prancheta", "Book_individual_Prancheta", "Prancheta"),
-    ("val", "Book_individual_Val", "Val"),
+    ("val", "Book_individual_Val_v02", "Val"),
     ("topete", "Book_individual_Topete", "Topete"),
 ]
 LARG, ALT = 1800, 1272          # tela única da revista (proporção A4 paisagem)
