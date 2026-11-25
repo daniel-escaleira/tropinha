@@ -51,6 +51,8 @@ ELENCO = [
     (5, "Quer que a jogada ganhe", "Quer acertar o lance que viu o pai fazer e ouvir dele “faz de novo”. A pressa de ser craque faz a comemoração chegar antes da bola. Sua melhor qualidade: observa, aprende rápido e aplaude quem jogou melhor."),
     (5, "Ele enche o peito", "Ele prende a bola sob a sola, igual ao pai, e conta a pausa em voz baixa. Sai pelo lado certo e comemora antes da hora: Val espalma. Do banco, o Vovô só diz “de novo”."),
     (5, "“Que gooo", "“Um dia eu faço igual. Depois eu faço melhor.”"),
+    # Topete: por que um quero-quero é o mascote (pedido do Daniel em 25/11/2026)
+    (9, "O quero-quero fez ninho", "O quero-quero é o bicho do futebol brasileiro: faz o ninho no chão do gramado e defende o pedaço. Fez o dele no campinho ao lado e virou o mascote da Tropinha: um passo dele desvia quem vem correndo."),
     (10, "Ele já tem o grito de gol", "Ele já comemorava o gol; ela fechou o canto. O filho do Vovô baixa os braços, aplaude a defesa e pede outra bola."),
     (10, "Ela desafia o filho a narrar", "Ela marca o filho como marca o marido, sem facilitar. Joia tenta a pausa do pai e ela lê na hora. Na segunda, ele arrisca o próprio giro."),
     (11, "Nanda rola a bola.", "Nanda rola a bola. Vovô prende com a sola. Duda avança para marcar. Do banco, Joia prende outra bola sob a sola, igual ao pai."),

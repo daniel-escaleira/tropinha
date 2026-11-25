@@ -22,7 +22,7 @@ LIVROS = [
     ("duda", "Book_individual_Duda", "Duda"),
     ("prancheta", "Book_individual_Prancheta", "Prancheta"),
     ("val", "Book_individual_Val_v02", "Val"),
-    ("topete", "Book_individual_Topete", "Topete"),
+    ("topete", "Book_individual_Topete_v02", "Topete"),
 ]
 LARG, ALT = 1800, 1272          # tela única da revista (proporção A4 paisagem)
 FUNDO = (243, 238, 224)

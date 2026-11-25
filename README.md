@@ -29,7 +29,7 @@ Abre em http://127.0.0.1:4173.
 | `data/personagens.js` | As fichas completas e os encontros de "Juntos". **Corrija aqui o texto longo** |
 | `data/poses.js`, `data/revista.js` | Gerados por `ferramentas/extrair.py`: nomes das poses e páginas da revista |
 | `assets/p/<id>/` | 36 poses, 6 expressões e a capa de cada personagem, tiradas dos books |
-| `assets/revista/` | As 110 páginas dos oito books |
+| `assets/revista/` | As 111 páginas dos oito books |
 | `assets/quadra.webp` | Arte de capa do Book do Elenco, usada na capa do site |
 | `assets/filme-01.mp4` | Filme 01, versão 08 leve |
 | `assets/audio/` | Três trilhas de 1 min 15 s em laço (`trilha-samba`, `trilha-funk`, `trilha-rap`) e o som de virar página. Geradas no ElevenLabs em 25/11/2026 |
