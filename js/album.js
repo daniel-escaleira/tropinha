@@ -85,6 +85,10 @@ function pagina(p, i) {
       </div>
     </div>
     <div class="fatos">${fato("O que quer", p.desejo)}${fato("Qualidade", p.qualidade)}${fato("Defeito", p.defeito)}${fato("O que esperar", p.esperar)}</div>
+    <aside class="jargao" id="j-${p.id}">
+      <div class="jargao-cab"><p class="sobre">O jargão ${de(p.id)}</p><p class="jargao-frase">“${esc(a.jargao.frase).replace(/\*(.+?)\*/g, "<i>$1</i>")}”</p></div>
+      <div class="jargao-txt"><div><h4>Por que esse jargão</h4><p>${esc(a.jargao.porque)}</p></div><div><h4>Quando aparece</h4><p>${esc(a.jargao.quando)}</p></div></div>
+    </aside>
     <div class="lance" id="l-${p.id}">
       <div class="lance-texto">
         <p class="sobre">O lance ${de(p.id)}</p><h3>${esc(a.lance.nome)}</h3>
@@ -103,13 +107,12 @@ function pagina(p, i) {
       <div class="rostos">${nomes.expr.map((e, k) => `<button data-salto="${p.id}|e|${k + 1}"><img src="${rosto(p.id, k + 1)}" alt="" loading="lazy"><span>${esc(e)}</span></button>`).join("")}</div></div>
     <div><h3 class="bloco-t">As 36 poses ${de(p.id)} <span>arraste para o lado e toque para ampliar</span></h3>
       <div class="tira">${nomes.poses.map((e, k) => `<button data-salto="${p.id}|p|${k + 1}"><img src="${fig(p.id, k + 1)}" alt="" loading="lazy"><span>${esc(e)}</span></button>`).join("")}</div></div>
-    <details class="mais"><summary>Mais sobre ${artigo(p.id)}<span>função na história, sonho, medo, voz, como reconhecer e um ponto para você decidir</span></summary>
+    <details class="mais"><summary>Mais sobre ${artigo(p.id)}<span>função na história, sonho, medo, voz, falas e como reconhecer</span></summary>
       <div class="mais-corpo"><div class="mais-grade">
         ${ponto("Função na história", p.funcao, 1)}${ponto("Sonho", p.sonho)}${ponto("Medo", p.medo)}
         ${ponto("Como reconhecer", p.reconhecer, 1)}${ponto("Voz", p.voz)}
         <div class="ponto"><h4>Falas</h4>${p.falas.map(f => `<p class="dito">“${esc(f)}”</p>`).join("")}</div>
         ${ponto("Um momento de jogo", p.momento, 1)}</div>
-        <aside class="decidir"><h4>Ponto para você decidir</h4><p>${esc(p.decidir)}</p></aside>
         ${p.real ? `<p class="miudo">Sonhos, medos e falas são do personagem de ficção, não da pessoa que o inspira.</p>` : ""}
         <p><button class="botao linha" data-cap="${p.id}">Ler o capítulo ${de(p.id)} na revista</button></p>
       </div></details>

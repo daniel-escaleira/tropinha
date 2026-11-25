@@ -121,6 +121,18 @@ p { margin: 0; }
 @media (min-width: 1100px) { .fatos { grid-template-columns: repeat(4, 1fr); } }
 
 /* O lance: texto e botão de um lado, o replay em quadros do outro. Sem acerto nem erro. */
+/* O jargão: a caixa na cor do personagem. A frase fica em caixa natural (pega la vision se escreve em minúsculas). */
+.jargao { background: var(--cor); color: var(--tinta); border: 2px solid var(--tinta); border-radius: 28px; padding: 22px 20px 24px; box-shadow: 0 6px 0 var(--tinta); display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+.jargao .sobre { opacity: 1; margin-bottom: 12px; }
+.jargao-frase { font: 800 clamp(46px, 11vw, 88px)/.92 var(--display); letter-spacing: -.005em; text-wrap: balance; }
+.jargao-frase i { font-style: italic; }
+.jargao-txt { display: grid; gap: 14px; padding-top: 16px; border-top: 2px solid rgba(15, 41, 35, .28); }
+.jargao-txt h4 { font: 700 13px/1.2 var(--texto); letter-spacing: .14em; margin-bottom: 4px; }
+.jargao-txt p { font-size: 17px; }
+@media (min-width: 900px) {
+  .jargao { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 34px; padding: 32px 36px 34px; }
+  .jargao-txt { padding: 4px 0 4px 32px; border-top: 0; border-left: 2px solid rgba(15, 41, 35, .28); }
+}
 .lance { border-radius: 28px; background: var(--tinta); color: var(--papel); padding: 20px 16px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
 .lance .sobre { color: var(--cor); opacity: 1; }
 .lance h3 { font-size: clamp(44px, 8vw, 64px); }
@@ -177,8 +189,6 @@ p { margin: 0; }
 .ponto h4 { font: 700 13px/1.2 var(--texto); letter-spacing: .14em; margin-bottom: 4px; }
 .ponto p { font-size: 16px; }
 .ponto .dito { font-style: italic; }
-.decidir { background: var(--cor); border: 2px solid var(--tinta); border-radius: 16px; padding: 16px 18px; }
-.decidir h4 { font-size: 22px; margin-bottom: 6px; }
 @media (min-width: 760px) { .mais-grade { grid-template-columns: 1fr 1fr; } .ponto.largo { grid-column: 1 / -1; } }
 .pg-pe { display: flex; justify-content: center; margin-top: 6px; }
 

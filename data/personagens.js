@@ -1,4 +1,4 @@
-/* As sete fichas, nos mesmos doze pontos. Texto tirado dos books (Book do Elenco, versão final,
+/* As sete fichas, nos mesmos pontos. Texto tirado dos books (Book do Elenco, versão final,
    e os sete books individuais). Para corrigir uma ficha, edite só este arquivo. */
 window.PERSONAGENS = [
 {
@@ -16,7 +16,6 @@ window.PERSONAGENS = [
   voz: "Só fala depois do toque: o silêncio antes da saída faz parte da atuação. A graça está no tempo que ele leva para descobrir o próprio erro.",
   falas: ["Ué. Eu marquei o quê, então?", "Faz de novo, filho. Dessa vez eu olho o pé.", "Quando foi que eu te contei pra onde eu ia?"],
   momento: "A Nanda toma a bola. Ele ainda termina o giro, procura a bola e só então procura a esposa com os olhos. Ela já está esperando na saída.",
-  decidir: "“Inventa moda” e a pose parado com a sola na bola estão nos arquivos como “a confirmar com o Anselmo”. É você? As falas em primeira pessoa também passam pela sua leitura.",
   giro: [1, 2, 3, 6, 4, 5], replay: [19, 24], replayNome: "A balançada"
 },
 {
@@ -34,7 +33,6 @@ window.PERSONAGENS = [
   voz: "Voz adulta, próxima, de quem conversa a poucos passos. Antes do duelo, o desafio soa quase como um convite para entrar em casa.",
   falas: ["Então vem. Agora quero ver de perto.", "Eu ia dizer esquerda. Ainda bem que eu calei."],
   momento: "Do alambrado, ela prevê a finta do marido. Ele a chama para o X1. Ela acerta a primeira leitura, se anima e anuncia a segunda. O Vovô escuta o palpite e muda a saída.",
-  decidir: "A Nanda é inspirada na Fernanda. O jeito de falar, as tatuagens e o papel de esposa e mãe na história precisam do sim dela e do seu.",
   giro: [1, 2, 3, 5, 4, 6], replay: [19, 24], replayNome: "O bote"
 },
 {
@@ -52,7 +50,6 @@ window.PERSONAGENS = [
   voz: "Em quadra fala pouco, como o pai: primeiro o toque, depois a frase. Quando acerta, a voz sobe. Quando o pai explica um lance, ele fica quieto e olha o pé.",
   falas: ["Um dia eu faço igual. Depois eu faço melhor.", "Pai, vê se pega a passada.", "Prancheta, você vem comigo."],
   momento: "Ele prende a bola sob a sola, igual ao pai, e conta a pausa em voz baixa. Sai pelo lado certo e comemora antes da hora: a Val espalma. Do banco, o Vovô só diz: “de novo”.",
-  decidir: "O Joia é inspirado no Bryan. A ideia é ele se espelhar no pai e querer ser um grande jogador: confira se o tom está certo. O corpo do desenho, do que ele ri e em que produtos aparece são decisões da família.",
   giro: [1, 2, 3, 6, 4, 5], replay: [19, 24], replayNome: "O giro"
 },
 {
@@ -70,7 +67,6 @@ window.PERSONAGENS = [
   voz: "Voz jovem, de quem ainda está jogando. Diz o verbo junto com o movimento. Quando ensina, desacelera o corpo primeiro.",
   falas: ["Volta Curta. Fui eu que dei o nome.", "Olha meu pé aqui. Agora olha de novo."],
   momento: "Um pé anuncia a arrancada. Ela recolhe a bola meia passada e entra por dentro da marcação. O Vovô pede replay, e ela mostra onde desistiu da primeira ideia.",
-  decidir: "A Duda é inventada: não retrata ninguém da sua família. O nome ainda não passou por busca de registro.",
   giro: [1, 2, 3, 5, 4, 6], replay: [19, 24], replayNome: "A Volta Curta"
 },
 {
@@ -88,7 +84,6 @@ window.PERSONAGENS = [
   voz: "Voz de criança, curiosa. Deixa uma pausa depois de “espera”, como se os olhos ainda buscassem o instante que faltou.",
   falas: ["Espera. Qual foi o pé que ficou?", "Deixa essa seta aberta. Agora é a minha vez."],
   momento: "Ele desenha a saída da Duda antes que ela termine. A bola segue pelo outro lado. Ele levanta a folha para conferir, desiste de adivinhar e pede para marcar a próxima.",
-  decidir: "O Prancheta é inventado. É o personagem natural do material escolar, que só anda depois da limpeza do perfil. O nome pede consulta jurídica.",
   giro: [1, 2, 3, 5, 4, 6], replay: [13, 18], replayNome: "A seta"
 },
 {
@@ -106,7 +101,6 @@ window.PERSONAGENS = [
   voz: "Voz adulta, clara, projetada do fundo da quadra. A ironia vem no fim da defesa, quando a bola já está segura.",
   falas: ["Vai querer esse canto de novo?", "Foi o sol. Tá, foi seu pé. Outra?"],
   momento: "Ela deixa uma faixa do gol à vista. O Vovô olha, aceita e chuta. A bola encontra as duas luvas. Ela devolve rasteiro e abre o mesmo canto, para ver o que ele fará.",
-  decidir: "A Val é inventada: não é esposa, parente nem treinadora de ninguém. O nome ainda não passou por busca de registro.",
   giro: [1, 2, 3, 5, 4, 6], replay: [19, 24], replayNome: "A defesa"
 },
 {
@@ -124,7 +118,6 @@ window.PERSONAGENS = [
   voz: "Sem palavras. Um chamado curto acompanha a advertência; um ruído de grama e uma pausa resolvem a volta ao ninho.",
   falas: ["Um passo à frente. Um canto curto. O campinho inteiro entende."],
   momento: "A bola sai da quadra. O Vovô corre atrás e freia ao ver o peito da ave subir. O Topete dá um passo curto. O jogador abre uma curva enorme no gramado, e o bicho volta a sentar.",
-  decidir: "Os fatos sobre o quero-quero ainda precisam de conferência em fonte. O nome foi aprovado pelo Daniel e não passou por busca de registro.",
   giro: [1, 2, 3, 5, 4, 6], replay: [19, 24], replayNome: "O passo de aviso"
 }
 ];
