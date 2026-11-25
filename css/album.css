@@ -271,11 +271,12 @@ body.travado { overflow: hidden; }
 
 /* A figura que salta */
 .salto-camada { position: fixed; inset: 0; z-index: 50; background: rgba(8, 22, 19, .86); display: grid; place-items: center; padding: 18px; }
-.salto-cartao { width: min(92vw, 430px); background: var(--papel); color: var(--tinta); border-radius: 22px; padding: 16px; display: grid; gap: 10px; border: 6px solid var(--cor); animation: salta .5s cubic-bezier(.2, 1.5, .4, 1) both; }
+.salto-cartao { width: min(92vw, 430px); max-height: calc(100vh - 36px); max-height: calc(100dvh - 36px); overflow: auto; background: var(--papel); color: var(--tinta); border-radius: 22px; padding: 16px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; border: 6px solid var(--cor); animation: salta .5s cubic-bezier(.2, 1.5, .4, 1) both; }
 @keyframes salta { from { transform: scale(.25) rotate(-8deg); } to { transform: none; } }
-.salto-cartao .quadro { height: min(50vh, 380px); display: grid; place-items: center; }
-.salto-cartao .quadro img { max-height: 100%; max-width: 100%; mix-blend-mode: multiply; }
-.salto-cartao h3 { font-size: 30px; }
+/* O quadro tem altura definida e a imagem se ajusta dentro dele: nada do cartão fica por cima da figura. */
+.salto-cartao .quadro { height: min(46vh, 380px); overflow: hidden; }
+.salto-cartao .quadro img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; mix-blend-mode: multiply; filter: brightness(1.035); }
+.salto-cartao h3 { font-size: 30px; line-height: 1.05; padding-top: 10px; border-top: 2px solid rgba(15, 41, 35, .14); }
 .salto-cartao .leg { font: 700 13px/1.2 var(--texto); letter-spacing: .12em; text-transform: uppercase; opacity: .75; }
 .salto-nav { display: flex; gap: 8px; flex-wrap: wrap; }
 .salto-nav .botao { min-height: 44px; font-size: 15px; padding: 0 16px; }
