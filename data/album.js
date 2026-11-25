@@ -24,9 +24,9 @@ window.ALBUM = {
   joia: {
     papel: "O filho que se espelha no pai",
     fala: "Um dia eu faço igual. Depois eu faço melhor.",
-    jargao: { frase: "Pega a passada.",
-      porque: "Ele se espelha no pai até no jeito de falar. O pai manda pegar a vision do lance; o filho desafia o pai a pegar a passada dele. É o jargão de quem aprendeu olhando e agora quer ser olhado.",
-      quando: "Antes de tentar o giro, de olho no pai: “Pai, vê se pega a passada.”" },
+    jargao: { frase: "Um, dois… fui!",
+      porque: "O pai segura a bola e espera em silêncio. O Joia ainda não tem essa paciência, então conta a pausa em voz baixa para não sair antes da hora. Quando pula o “dois”, perde a bola. No dia em que não precisar mais contar, virou craque.",
+      quando: "Com a bola sob a sola, igual ao pai, antes de sair para o giro. É uma contagem que a tropa pode fazer junto." },
     quadra: "Copia a pausa e a sola do pai, treina o próprio giro e quer ser um grande jogador.",
     lance: { nome: "O giro", texto: "Começa como o pai, com a bola sob a sola. Depois faz o que já é dele: recebe, protege, gira e bate.", quadros: [19, 20, 21, 22, 23, 24] }
   },
