@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f2923">
+<title>O Vovô do X1 e sua Tropinha</title>
+<meta name="description" content="Sete personagens, uma quadra no Rio e um lance que cada um vê de um jeito. Edição para aprovação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="css/album.css">
+</head>
+<body>
+
+<header class="barra" id="barra">
+  <a class="marca" href="#capa">A Tropinha</a>
+  <nav class="progresso" id="progresso" aria-label="Os sete personagens"></nav>
+  <div class="som" role="group" aria-label="Música">
+    <button class="som-toca" id="toca" aria-pressed="false" aria-label="Tocar a música"><span class="ic-toca" aria-hidden="true"></span></button>
+    <select id="estilo" aria-label="Estilo da música"></select>
+  </div>
+</header>
+
+<main>
+  <!-- Capa -->
+  <section class="capa" id="capa">
+    <div class="capa-texto">
+      <p class="sobre">Effective Bussiness Consulting apresenta</p>
+      <h1>O Vovô do X1 <span>e sua Tropinha</span></h1>
+      <p class="chamada">Sete personagens, uma quadra no Rio e um lance que cada um vê de um jeito.</p>
+      <div class="capa-botoes">
+        <button class="botao principal grande" id="abrir">Começar a jornada</button>
+        <a class="botao linha" href="#filme-secao">Ir direto ao filme</a>
+      </div>
+      <div class="trilha" id="trilha" role="group" aria-label="Trilha sonora"></div>
+      <p class="nota">Edição para aprovação.</p>
+    </div>
+    <div>
+      <div class="capa-arte" id="arte"><img src="assets/quadra.webp" width="1768" height="1008" alt="A quadra no fim de tarde, com os sete personagens em jogo"></div>
+      <p class="arte-dica">Toque em alguém na quadra para ir à página dele.</p>
+    </div>
+  </section>
+
+  <!-- A jornada -->
+  <section class="como" id="como">
+    <h2>A jornada tem três passos</h2>
+    <ol class="passos-como">
+      <li><b>1</b><div><h3>Conheça os sete</h3><p>Cada personagem tem a sua página: quem é, o que quer, a qualidade, o defeito e o que esperar dele.</p></div></li>
+      <li><b>2</b><div><h3>Veja o lance de cada um</h3><p>Toque em “Ver o lance” e o personagem faz a jogada dele, quadro a quadro.</p></div></li>
+      <li><b>3</b><div><h3>Assista ao filme</h3><p>No fim, o vídeo que vai para o Instagram: o Vovô vira desenho e anuncia a Tropinha.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- O time -->
+  <section class="time" id="time">
+    <p class="sobre">Quem entra em quadra</p>
+    <h2>O time</h2>
+    <p class="sub">Toque em alguém para ir à página dele, ou siga rolando.</p>
+    <div class="time-grade" id="time-grade"></div>
+  </section>
+
+  <!-- Uma página por personagem -->
+  <div id="paginas"></div>
+
+  <!-- Fim da jornada: o filme -->
+  <section class="final" id="filme-secao">
+    <p class="sobre">Fim da jornada · Filme 01</p>
+    <h2>O anúncio da Tropinha</h2>
+    <p class="sub">É assim que eles chegam ao Instagram: o Vovô vira desenho e avisa que a Tropinha está chegando. Toque no vídeo para assistir.</p>
+    <div class="filme-grade">
+      <div class="filme" id="filme"></div>
+      <div class="filme-lado">
+        <h3 id="trilho-titulo">Quem você já conheceu</h3>
+        <div class="fileira" id="fileira"></div>
+        <p class="miudo" id="trilho-nota"></p>
+        <h3 class="breve-t">Os próximos vídeos</h3>
+        <p class="miudo">Depois do Vovô, cada personagem ganha o seu.</p>
+        <div class="breve" id="breve"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Juntos -->
+  <section class="final claro" id="juntos">
+    <p class="sobre">Relações</p>
+    <h2>O que muda quando jogam juntos</h2>
+    <p class="sub">Escolha dois personagens e veja como um muda o jogo do outro.</p>
+    <div class="escolha" id="escolha"></div>
+    <div class="duelo" id="duelo"><p>Toque em dois rostos.</p></div>
+  </section>
+
+  <!-- Revista -->
+  <section class="final" id="revista">
+    <p class="sobre">Para ler a fundo</p>
+    <h2>A revista da Tropinha</h2>
+    <p class="sub">Os oito books numa revista só: o elenco e um capítulo por personagem. Vire as páginas. Nas pranchas de poses, toque numa figura e ela salta da página.</p>
+    <div id="revista-corpo"><button class="botao principal" id="abrir-revista">Abrir a revista</button></div>
+  </section>
+
+  <!-- Sua vez -->
+  <section class="final claro" id="vez">
+    <p class="sobre">Edição para aprovação</p>
+    <h2>Sua vez, Anselmo</h2>
+    <p class="sub">Diga como cada personagem bateu em você. Se quiser, escreva o que mudaria. No fim, o site monta a mensagem e abre o WhatsApp do Daniel.</p>
+    <div class="vez-lista" id="vez-lista"></div>
+    <textarea class="geral" id="geral" placeholder="Um comentário geral, se quiser" aria-label="Comentário geral"></textarea>
+    <div class="acoes">
+      <a class="botao principal" id="zap" target="_blank" rel="noopener" href="#">Mandar pelo WhatsApp</a>
+      <button class="botao linha" id="copiar">Copiar o texto</button>
+    </div>
+    <p class="miudo">O site não guarda nem envia nada sozinho: a mensagem só sai quando você tocar em enviar no WhatsApp.</p>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p>Criação e direção: Effective Bussiness Consulting. Edição para aprovação.</p>
+  <p>Personagens, sonhos, medos e falas são de ficção.</p>
+</footer>
+
+<div id="salto" class="salto-camada" hidden></div>
+<div id="aviso" class="aviso" role="status" hidden></div>
+<canvas id="festa" aria-hidden="true"></canvas>
+<audio id="tema" loop preload="none"></audio>
+
+<script src="data/personagens.js"></script>
+<script src="data/album.js"></script>
+<script src="data/poses.js"></script>
+<script src="data/revista.js"></script>
+<script src="vendor/page-flip.browser.js"></script>
+<script src="js/album.js"></script>
+</body>
+</html>
